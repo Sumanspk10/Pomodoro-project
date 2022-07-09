@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(219, 41, 41);
+    font-family: 'Courier New', Courier, monospace;
+}
+.timer-content{
+    width: 25%;
+    margin: 0 auto;
+}
+
+.header-title{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 auto;
+}
+header{
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid  rgba(0,0,0, 0.1);
+
+}
+.timer-container{
+    background-color: rgba(191, 46, 46, 0.793);
+    width: 80%;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+.tab-list{
+    text-align: center;
+}
+.tab-item{
+    color: white;
+    padding: 5px;
+    display: inline-block;
+    font-size: 15px;
+
+    font-family:Georgia, 'Times New Roman', Times, serif
+
+}
+.tab-item.active{
+    background-color: rgba(88, 80, 88, 0.793);
+}
+.tab-content{
+    color:white;
+}
+.tab-item-content{
+    display: none;
+    text-align: center;
+}
+.tab-item-content.active{
+display: block;
+}
+.time{
+    color: white;
+    font-size: 95px;
+    padding: 20px;
+    font-weight: bolder;
+}
+button{
+    padding: 10px 45px;
+    
+}
+
+
