@@ -45,7 +45,7 @@ function timer(seconds){
 
     const timerinterval=setInterval(function() {
         const secondsLeft = Math.round((then -Date.now())/1000);
-        console.log(secondsLeft);
+        displayTime(secondsLeft,pomodoroTime);
 
         if(secondsLeft<1){
             clearInterval(timerinterval)
@@ -54,4 +54,25 @@ function timer(seconds){
     }, 1000);
 
 };
-timer(10);
+//function displayTime(seconds){
+   // const minute = Math.floor(seconds/60);
+    //const second = seconds%60;
+    //console.log({minute,second});
+
+//}
+function displayTime(seconds,element){
+    const minute = Math.floor(seconds/60);
+     const second = seconds%60;
+     console.log({minute,second});
+     element.innerText = minute + ":" + second;
+}
+const pomodoroTime =document.getElementById("pomodoroTime");
+//displayTime(402,pomodoroTime);
+const pomodoroButton=document.getElementById("pomodoroButton")
+pomodoroButton.addEventListener("click",function(){
+   const pomodoroTotalTime=1500;
+   timer(pomodoroTotalTime);
+    //timer(300);
+});
+
+
